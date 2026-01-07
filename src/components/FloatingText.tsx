@@ -87,9 +87,9 @@ export const FloatingText = ({ onClick }: FloatingTextProps) => {
 
           >
             {config.text}
-            {/* meshBasicMaterial: We use a high color intensity to make it 'glow' with Bloom */}
+            {/* meshBasicMaterial: High color intensity for visibility */}
             <meshBasicMaterial
-              color={new THREE.Color(config.color).multiplyScalar(20)}
+              color={new THREE.Color(config.color).multiplyScalar(40)}
               toneMapped={false}
             />
           </Text3D>

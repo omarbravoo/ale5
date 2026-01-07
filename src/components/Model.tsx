@@ -43,12 +43,12 @@ export function Model(props: ThreeElements['group']) {
   }), [texture]);
 
   const materialEmission = React.useMemo(() => ({
-    purple: new THREE.MeshBasicMaterial({ color: new THREE.Color('purple').multiplyScalar(30), toneMapped: false }),
-    red: new THREE.MeshBasicMaterial({ color: new THREE.Color('red').multiplyScalar(30), toneMapped: false }),
-    blue: new THREE.MeshBasicMaterial({ color: new THREE.Color('blue').multiplyScalar(30), toneMapped: false }),
-    green: new THREE.MeshBasicMaterial({ color: new THREE.Color('green').multiplyScalar(30), toneMapped: false }),
-    yellow: new THREE.MeshBasicMaterial({ color: new THREE.Color('yellow').multiplyScalar(30), toneMapped: false }),
-    white: new THREE.MeshBasicMaterial({ color: new THREE.Color('white').multiplyScalar(30), toneMapped: false }),
+    purple: new THREE.MeshBasicMaterial({ color: new THREE.Color('purple').multiplyScalar(50), toneMapped: false }),
+    red: new THREE.MeshBasicMaterial({ color: new THREE.Color('red').multiplyScalar(50), toneMapped: false }),
+    blue: new THREE.MeshBasicMaterial({ color: new THREE.Color('blue').multiplyScalar(50), toneMapped: false }),
+    green: new THREE.MeshBasicMaterial({ color: new THREE.Color('green').multiplyScalar(50), toneMapped: false }),
+    yellow: new THREE.MeshBasicMaterial({ color: new THREE.Color('yellow').multiplyScalar(50), toneMapped: false }),
+    white: new THREE.MeshBasicMaterial({ color: new THREE.Color('white').multiplyScalar(50), toneMapped: false }),
   }), []);
 
   const materialGlass = React.useMemo(() => new THREE.MeshPhysicalMaterial({
